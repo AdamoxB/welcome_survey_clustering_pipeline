@@ -4,9 +4,9 @@ import pandas as pd
 from pycaret.clustering import load_model, predict_model
 import plotly.express as px
 
-MODEL_NAME = 'welcome_survey_clustering_pipeline_v2'
-DATA = 'welcome_survey_simple_v2.csv'
-CLUSTER_NAMES_AND_DESCRIPTIONS = 'welcome_survey_cluster_names_and_descriptions_v2.json'
+MODEL_NAME = 'welcome_survey_clustering_pipeline_v2_EN'
+DATA = 'welcome_survey_simple_v2_EN.csv'
+CLUSTER_NAMES_AND_DESCRIPTIONS = 'welcome_survey_cluster_names_and_descriptions_v2_EN.json'
 
 @st.cache_data
 def get_model():
