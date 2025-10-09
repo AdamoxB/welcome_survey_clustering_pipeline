@@ -45,7 +45,7 @@ if st.button(translations["switch_language"]):
 translations = load_translations(st.session_state.selected_language)
 
 
-MODEL_NAME = f'data/welcome_survey_clustering_pipeline_v2_{st.session_state.selected_language}.pkl'
+MODEL_NAME = f'data/welcome_survey_clustering_pipeline_v2_{st.session_state.selected_language}'
 DATA = f'data/welcome_survey_simple_v2_{st.session_state.selected_language}.csv'
 
 model = get_model()
