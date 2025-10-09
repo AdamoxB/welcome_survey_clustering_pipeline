@@ -11230,3 +11230,31 @@ dtype: int64}]))),
                                                               use_cat_names=True))),
                 ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
 2025-10-09 14:58:50,570:INFO:Set up data.
+2025-10-09 14:59:23,432:INFO:Initializing predict_model()
+2025-10-09 14:59:23,432:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000024842387210>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mężczyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=123))]), ml_usecase=None)
+2025-10-09 14:59:23,432:INFO:Set up data.
