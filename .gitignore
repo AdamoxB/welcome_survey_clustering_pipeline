@@ -1,4 +1,5 @@
 ignore/
 .venv/  
+venv
 logs.log
 .env
